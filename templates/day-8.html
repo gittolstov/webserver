@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Сайт начинающего верстальщика</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <p class="page-title">Блог</p>
-      <nav class="blog-navigation">
-        <a href="http://127.0.0.1:5000/index">На главную</a>
-      </nav>
-    </header>
-    <main>
+{% extends 'base.html' %}
+
+{% block content %}
       <article>
         <h1>День восьмой. Очень серьёзный</h1>
         <p>Что я узнал! В программе тренинга Кекса для начинающих котят появился новый мастер-класс — «Как не провалиться под снег». А мне поручили сверстать небольшой методический материал.</p>
@@ -34,9 +22,4 @@
       <aside class="partnership">
         Тут могла быть ваша реклама
       </aside>
-    </main>
-    <footer>
-      Подвал сайта
-    </footer>
-  </body>
-</html>
+{% endblock %}

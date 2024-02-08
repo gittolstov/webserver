@@ -3,7 +3,7 @@
 {% block header %}
         <h1 class="page-title">Сайт начинающего верстальщика</h1>
         <div class="avatar-container">
-          <img class="avatar" src="{{ url_for("static", filename = "raccoon.svg") }}" width="80" height="80" alt="Аватарка">
+          <img class="avatar" src='{{ url_for("static", filename = "raccoon.svg") }}' width="80" height="80" alt="Аватарка">
         </div>
 {% endblock %}
 
@@ -12,7 +12,7 @@
       <h2>Записи в блоге</h2>
       <ul>
         <li><a href="{{ url_for('day', num=1) }}">День первый. Как я забыл покормить кота</a></li>
-        <li><a href="{{ url_for('day', num=1) }}">День второй. Хочу быть верстальщиком</a></li>
+        <li><a href="{{ url_for('day', num=2) }}">День второй. Хочу быть верстальщиком</a></li>
         <li><a href="{{ url_for('day', num=3) }}">День третий. Мой кот на меня обиделся</a></li>
         <li><a href="{{ url_for('day', num=4) }}">День четвертый. Как я чуть не заболел</a></li>
         <li><a href="{{ url_for('day', num=5) }}">День пятый. Отдыхаю</a></li>
@@ -20,12 +20,13 @@
         <li><a href="{{ url_for('day', num=7) }}">День седьмой. Кекс выдал мне задание</a></li>
         <li><a href="{{ url_for('day', num=8) }}">День восьмой. Очень серьёзный</a></li>
         <li><a href="{{ url_for('day', num=9) }}">День девятый. Точнее ночь</a></li>
-        <li><a href="{{ url_for('day', num=1) }}0">День десятый. Подведение итогов</a></li>
-        <li><a href="{{ url_for('day', num=1) }}1">День одиннадцатый. Без фанатизма</a></li>
-        <li><a href="{{ url_for('day', num=1) }}2">День двенадцатый. Все любят печенье</a></li>
-        <li><a href="{{ url_for('day', num=1) }}3">День тринадцатый. Нашёл статью</a></li>
-        <li><a href="{{ url_for('day', num=1) }}4">День четырнадцатый. Новый формат</a></li>
-        <li><a href="{{ url_for('day', num=1) }}5">День пятнадцатый. Галерея селфи</a></li>
+        <li><a href="{{ url_for('day', num=10) }}">День десятый. Подведение итогов</a></li>
+        <li><a href="{{ url_for('day', num=11) }}">День одиннадцатый. Без фанатизма</a></li>
+        <li><a href="{{ url_for('day', num=12) }}">День двенадцатый. Все любят печенье</a></li>
+        <li><a href="{{ url_for('day', num=13) }}">День тринадцатый. Нашёл статью</a></li>
+        <li><a href="{{ url_for('day', num=14) }}">День четырнадцатый. Новый формат</a></li>
+        <li><a href="{{ url_for('day', num=15) }}">День пятнадцатый. Галерея селфи</a></li>
+        <li><a href="{{ url_for('day', num=16) }}">День шестнадцатый. Как меня били чайником и научили Flask жмыхать</a></li>
       </ul>
     </nav>
 {% endblock %}

@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    <form class="feedback-form" action="/form" method="post">
+    <form class="feedback-form" action="{{ url_for('login') }}" method="post">
         <p>
             <label for="fullname">Логин, пожалуйста:</label>
             <input type="text" name="fullname" id="fullname">
@@ -15,6 +15,6 @@
             <label for="phone">Пароль:</label>
             <input type="password" name="phone" id="phone">
         </p>
+        <input class="btn" type="submit" value="Отправить">
     </form>
-    <input class="btn" type="submit" value="Отправить">
 {% endblock %}
