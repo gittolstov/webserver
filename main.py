@@ -31,3 +31,6 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+#added useless commentary because there was a task at uni to commit something
